@@ -54,7 +54,7 @@ The api is the only service on more than one network because it is the only serv
 ## Quick Start
 
 ```bash
-git clone <repo-url> notes-app && cd notes-app
+git clone https://github.com/Jason2303/Docker-NotesApp.git notes-app && cd notes-app
 cp .env.example .env          # then edit the placeholder values
 docker compose up -d --build
 ```
@@ -88,7 +88,7 @@ Passing `-f` tells Compose to load **only** that file, so neither the base file 
 
 **First production run, pulling from Docker Hub (no build):**
 
-![Pulling images from Docker Hub](.images/pulls_from_docker_hub.png)
+![Pulling images from Docker Hub](images/pulls_from_docker_hub.png)
 
 **All 5 services running and healthy:**
 
