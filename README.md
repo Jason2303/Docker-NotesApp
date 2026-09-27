@@ -61,8 +61,6 @@ docker compose up -d --build
 
 Open `http://localhost:8080`.
 
-> Windows PowerShell: use `Copy-Item .env.example .env` instead of `cp`.
-
 ## Development Mode
 
 `docker compose up` automatically loads `docker-compose.override.yml` on top of `docker-compose.yml`. Compose merges the two files: single values (like `command`) are replaced, lists (like `ports`) are appended, and maps (like `environment`) are merged by key. This turns the production-style base file into a development setup without editing it.
@@ -90,7 +88,7 @@ Passing `-f` tells Compose to load **only** that file, so neither the base file 
 
 **First production run, pulling from Docker Hub (no build):**
 
-![Pulling images from Docker Hub](images/pulls_from_docker_hub.png)
+![Pulling images from Docker Hub](.images/pulls_from_docker_hub.png)
 
 **All 5 services running and healthy:**
 
